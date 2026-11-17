@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convite de aniversário infantil">
+  <title>Aniversário da Clara | 7 anos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="topbar" aria-label="Navegação principal">
+    <a class="brand" href="#inicio">CLARA 7</a>
+    <div class="nav-links">
+      <a href="#festa">A festa</a>
+      <a href="#memorias">Memórias</a>
+      <a class="nav-cta" href="#confirmar">Confirmar</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="confetti confetti-one" aria-hidden="true"></div>
+      <div class="confetti confetti-two" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">VOCÊ ESTÁ CONVIDADO</p>
+        <h1>Clara faz <span>7!</span></h1>
+        <p class="hero-text">Dia de rir alto, correr muito e celebrar mais um ano de tantas descobertas.</p>
+        <a class="button button-primary" href="#confirmar">Vou com vocês <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração da festa de aniversário">
+        <div class="balloon balloon-yellow" aria-hidden="true"></div>
+        <div class="balloon balloon-blue" aria-hidden="true"></div>
+        <div class="balloon balloon-pink" aria-hidden="true"></div>
+        <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=900&q=85" alt="Criança sorrindo em uma celebração">
+        <span class="age-badge" aria-label="7 anos">7</span>
+      </div>
+    </section>
+
+    <section class="party-strip" id="festa" aria-label="Detalhes da festa">
+      <article>
+        <span class="detail-icon" aria-hidden="true">✦</span>
+        <div><small>QUANDO</small><strong>12 de dezembro</strong><p>Às 15h30</p></div>
+      </article>
+      <article>
+        <span class="detail-icon" aria-hidden="true">⌖</span>
+        <div><small>ONDE</small><strong>Casa do Parque</strong><p>Av. das Flores, 250</p></div>
+      </article>
+      <article>
+        <span class="detail-icon" aria-hidden="true">♡</span>
+        <div><small>USE</small><strong>Traje alegre</strong><p>Temos piscina</p></div>
+      </article>
+    </section>
+
+    <section class="message-section">
+      <div class="message-photo">
+        <img src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?auto=format&fit=crop&w=900&q=85" alt="Crianças brincando juntas em uma festa">
+      </div>
+      <div class="message-copy">
+        <p class="eyebrow">RECADO DA CLARA</p>
+        <blockquote>“Quero comemorar ao seu lado. Venha jogar, dançar e comer bolo comigo!”</blockquote>
+        <p class="signature">Com carinho, Clara</p>
+      </div>
+    </section>
+
+    <section class="memories" id="memorias">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NOSSOS MELHORES MOMENTOS</p>
+          <h2>Memórias até aqui</h2>
+        </div>
+        <p>Uma galeria de um mundo cheio de cores, amigos e aventura.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery-tall">
+          <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=800&q=85" alt="Criança feliz ao ar livre">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=85" alt="Criança sorrindo">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&q=85" alt="Festa infantil colorida">
+        </figure>
+        <figure class="gallery-wide">
+          <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1100&q=85" alt="Criança brincando com amigos">
+        </figure>
+      </div>
+    </section>
+
+    <section class="rsvp" id="confirmar">
+      <div class="rsvp-intro">
+        <p class="eyebrow">RESERVE A SUA CALMAÇÃO</p>
+        <h2>Você vem?</h2>
+        <p>Confirme até 28 de novembro para garantir seu lugar na festa.</p>
+      </div>
+      <form id="rsvp-form" class="rsvp-form">
+        <label>
+          Seu nome
+          <input type="text" name="name" autocomplete="name" placeholder="Nome completo" required>
+        </label>
+        <label>
+          Telefone
+          <input type="tel" name="phone" autocomplete="tel" placeholder="(00) 00000-0000" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" autocomplete="email" placeholder="voce@exemplo.com">
+        </label>
+        <label>
+          Quantas pessoas?
+          <select name="guests" required>
+            <option value="1">Só eu</option>
+            <option value="2">2 pessoas</option>
+            <option value="3">3 pessoas</option>
+            <option value="4">4 pessoas</option>
+          </select>
+        </label>
+        <label class="full-field">
+          Recado para a Clara
+          <textarea name="message" rows="3" placeholder="Escreva uma mensagem bem legal"></textarea>
+        </label>
+        <button class="button button-dark full-field" type="submit">Confirmar presença <span aria-hidden="true">→</span></button>
+        <p class="form-status full-field" id="form-status" role="status" aria-live="polite"></p>
+        <div class="pdf-actions full-field" id="pdf-actions" hidden>
+          <a class="button button-primary" id="open-pdf-link" href="" target="_blank" rel="noopener">Abrir PDF</a>
+          <a class="button button-dark" id="download-pdf-link" href="" download>Baixar PDF</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#inicio">CLARA 7</a>
+    <p>12 · 12 · 2026 · Casa do Parque</p>
+  </footer>
+
+  <script src="script.js?v=20261117-3"></script>
+</body>
+</html>
